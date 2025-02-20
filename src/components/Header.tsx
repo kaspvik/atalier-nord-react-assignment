@@ -69,10 +69,14 @@ export default function Header() {
       <Menu open={isOpen}>
         <MenuList>
           <MenuItem>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              Hem
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/posters">Posters</Link>
+            <Link to="/posters" onClick={() => setIsOpen(false)}>
+              Posters
+            </Link>
           </MenuItem>
         </MenuList>
       </Menu>
