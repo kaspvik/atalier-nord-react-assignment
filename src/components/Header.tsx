@@ -12,6 +12,7 @@ const HeaderContainer = styled.header`
   font-family: "Aileron Black", sans-serif;
   font-size: 1.5rem;
   position: relative;
+  border-radius: 8px;
 `;
 
 const Logo = styled.h1`
