@@ -6,13 +6,13 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(190, 190, 190);
   color: #0746fd;
   padding: 1rem;
   font-family: "Aileron Black", sans-serif;
   font-size: 1.5rem;
   position: relative;
-  border-radius: 8px;
+  border-radius: 40px 10px;
 `;
 
 const Logo = styled.h1`
