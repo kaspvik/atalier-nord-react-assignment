@@ -1,9 +1,33 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 
-const API_KEY = "91fa9dc15784519b1da1be601d109b69"; // Ersätt med din OpenWeather API-nyckel
-const CITY = "Gothenburg"; // Kan ändras till användarens plats
+const API_KEY = "91fa9dc15784519b1da1be601d109b69";
+const CITY = "Gothenburg";
 const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+`;
+
+const StyledH2 = styled.h2`
+  font-size: 24px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Aileron", sans-serif;
+`;
+
+const StyledImage = styled.img`
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+`;
 
 const WeatherPoster: React.FC = () => {
   const [poster, setPoster] = useState<string>("");
@@ -15,27 +39,27 @@ const WeatherPoster: React.FC = () => {
         const response = await axios.get(API_URL);
         const temp = response.data.main.temp;
 
-        console.log("Temperatur:", temp);
+        console.log("Temperature:", temp);
 
         let selectedPoster = "/assets/default-poster.png";
-        let selectedHeadline = "Enjoy this artwork!"; // Standardrubrik
+        let selectedHeadline = "ENJOY THIS ARTWORK!";
 
         if (temp < 5) {
           selectedPoster = "src/assets/DisplayPosters/PrimaryDisplay2.png";
-          selectedHeadline = "It's cold outside, you better warm it up with:";
+          selectedHeadline = "IT'S COLD OUTSIDE, YOU BETTER WARM IT UP WITH:";
         } else if (temp < 20) {
           selectedPoster = "src/assets/DisplayPosters/CandyDisplay2.png";
-          selectedHeadline = "A cozy day calls for a beautiful piece of:";
+          selectedHeadline = "A COSY DAY CALLS FOR A BEAUTIFUL PIECE OF:";
         } else {
           selectedPoster = "src/assets/DisplayPosters/GlaucusDisplay2.png";
-          selectedHeadline = "Does the ice cream melt? Cool it down with:";
+          selectedHeadline = "DOES THE ICE CREAM MELT? COOL IT DOWN WITH:";
         }
 
-        console.log("Vald poster:", selectedPoster);
+        console.log("Chosen poster:", selectedPoster);
         setPoster(selectedPoster);
         setHeadline(selectedHeadline);
       } catch (error) {
-        console.error("Kunde inte hämta väderdata:", error);
+        console.error("Couldn't find weather data:", error);
       }
     };
 
@@ -43,16 +67,15 @@ const WeatherPoster: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h2>{headline}</h2>
+    <Container>
+      <StyledH2>{headline}</StyledH2>
       {poster && (
-        <img
+        <StyledImage
           src={poster}
-          alt="Rekommenderad poster"
-          style={{ width: "300px", borderRadius: "10px" }}
+          alt="Poster recommendation based on the weather"
         />
       )}
-    </div>
+    </Container>
   );
 };
 
