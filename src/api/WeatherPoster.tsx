@@ -16,11 +16,12 @@ const Container = styled.div`
 
 const StyledH2 = styled.h2`
   font-size: 24px;
-  text-align: left;
+  text-align: center;
   color: #333;
   margin-bottom: 20px;
   font-weight: 600;
   font-family: "Aileron", sans-serif;
+  white-space: pre-line;
 `;
 
 const StyledImage = styled.img`
@@ -46,13 +47,13 @@ const WeatherPoster: React.FC = () => {
 
         if (temp < 5) {
           selectedPoster = "src/assets/DisplayPosters/PrimaryDisplay2.png";
-          selectedHeadline = "IT'S COLD OUTSIDE, YOU BETTER WARM IT UP WITH:";
+          selectedHeadline = "IT'S COLD OUTSIDE!\n WARM IT UP WITH:";
         } else if (temp < 20) {
           selectedPoster = "src/assets/DisplayPosters/CandyDisplay2.png";
-          selectedHeadline = "A COSY DAY CALLS FOR A BEAUTIFUL PIECE OF:";
+          selectedHeadline = "A COSY DAY CALLS FOR\n A BEAUTIFUL PIECE OF:";
         } else {
           selectedPoster = "src/assets/DisplayPosters/GlaucusDisplay2.png";
-          selectedHeadline = "DOES THE ICE CREAM MELT? COOL IT DOWN WITH:";
+          selectedHeadline = "DOES THE ICE CREAM MELT?\n COOL IT DOWN WITH:";
         }
 
         console.log("Chosen poster:", selectedPoster);
