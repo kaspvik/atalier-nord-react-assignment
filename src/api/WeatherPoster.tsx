@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 
 const StyledH2 = styled.h2`
-  font-size: 24px;
+  font-size: 34px;
   text-align: center;
   color: #333;
   margin-bottom: 20px;
@@ -27,7 +27,7 @@ const StyledH2 = styled.h2`
 const StyledImage = styled.img`
   width: 500px;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 `;
 
 const WeatherPoster: React.FC = () => {

@@ -6,9 +6,9 @@ const StyledHeading = styled.h2`
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #333;
+  color: #0746fd;
   margin: 20px 0;
-  text-align: center;
+  text-align: left;
   font-family: "Aileron Black", sans-serif;
 `;
 
@@ -19,7 +19,7 @@ const YourComponent = () => {
       <StyledHeading>THE COLLECTIONS:</StyledHeading>
       <PosterCard
         image="src/assets/DisplayPosters/PrimaryDisplay2.png"
-        title="THE PRISMA COLLECTION"
+        title="THE SPECTRUM COLLECTION"
       />
     </div>
   );

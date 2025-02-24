@@ -17,6 +17,7 @@ const PosterImage = styled.img`
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 `;
 
 const PosterTitle = styled.h3`
