@@ -71,7 +71,7 @@ export default function Header() {
         <MenuList>
           <MenuItem>
             <Link to="/" onClick={() => setIsOpen(false)}>
-              Hem
+              Homepage
             </Link>
           </MenuItem>
           <MenuItem>
