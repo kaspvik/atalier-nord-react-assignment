@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 300px;
-  border: 2px solid #000;
   padding: 16px;
   text-align: center;
   cursor: pointer;
