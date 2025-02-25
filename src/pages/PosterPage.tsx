@@ -1,17 +1,41 @@
+import styled from "styled-components";
 import PosterCard from "../components/PosterCard";
 import { posters } from "../Data";
+
+const Heading = styled.h2`
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Aileron Black", sans-serif;
+`;
+
+const SubHeading = styled.h3`
+  font-size: 20px;
+  font-style: bold;
+  text-align: left;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: "Aileron Black", sans-serif;
+`;
+
+const Description = styled.p`
+  text-align: left;
+  font-family: "Aileron Black", sans-serif;
+`;
 
 export default function PosterPage() {
   return (
     <main>
-      <h2>THE SPECTRUM COLLECTION</h2>
-      <h3>"Where two colors meet, a new beauty emerges."</h3>
-      <p>
-        Discover the elegance of contrast and unity in Spectrum. Spectrum is a
-        collection that celebrates the power of color in contemporary art.
-        Perfect for those who appreciate how color transforms a space,
-        "Spectrum" brings dynamic energy and creativity into any room.
-      </p>
+      <Heading>THE SPECTRUM COLLECTION</Heading>
+      <SubHeading>WHERE TWO COLORS MEET, A NEW BEAUTY EMERGES</SubHeading>
+      <Description>
+        DISCOVER THE ELEGANCE OF CONTRAST AND UNITY IN SPECTRUM. SPECTRUM IS A
+        COLLECTION THAT CELEBRATES THE POWER OF COLOR IN CONTEMPORARY ART.
+        PERFECT FOR THOSE WHO APPRECIATE HOW COLOR TRANSFORMS A SPACE,
+        "SPECTRUM" BRINGS DYNAMIC ENERGY AND CREATIVITY INTO ANY ROOM.
+      </Description>
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
         {posters.map((poster) => (
