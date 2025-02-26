@@ -93,6 +93,11 @@ export default function Header() {
               BOTANICAL COLLECTION
             </Link>
           </MenuItem>
+          <MenuItem>
+            <Link to="/About" onClick={() => setIsOpen(false)}>
+              ABOUT US
+            </Link>
+          </MenuItem>
         </MenuList>
       </Menu>
     </HeaderContainer>
