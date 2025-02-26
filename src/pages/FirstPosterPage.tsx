@@ -133,7 +133,7 @@ export default function PosterPage() {
         {/* Fyra poster-rader med text */}
         {posters.slice(0, 4).map((poster, index) => (
           <PosterRow key={poster.id} reverse={index % 2 === 1}>
-            <StyledImage src={poster.image} alt={poster.title} />
+            <StyledImage src={poster.image} alt={poster.title} loading="lazy" />
             <Description>{descriptions[index]}</Description>
           </PosterRow>
         ))}
@@ -142,7 +142,12 @@ export default function PosterPage() {
       {/* Avslutande två bilder bredvid varandra */}
       <FinalRow>
         {posters.slice(4, 6).map((poster) => (
-          <StyledImage key={poster.id} src={poster.image} alt={poster.title} />
+          <StyledImage
+            key={poster.id}
+            src={poster.image}
+            alt={poster.title}
+            loading="lazy"
+          />
         ))}
       </FinalRow>
       <FinalHeading>
