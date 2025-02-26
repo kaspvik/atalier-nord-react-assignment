@@ -46,13 +46,16 @@ const WeatherPoster: React.FC = () => {
         let selectedHeadline = "";
 
         if (temp < 10) {
-          selectedPoster = "src/assets/DisplayPosters/PrimaryDisplay2.png";
+          selectedPoster =
+            "src/assets/PrimaryPosters/Display/PrimaryDisplay2.png";
           selectedHeadline = "IT'S COLD OUTSIDE!\n WARM IT UP WITH:";
         } else if (temp < 20) {
-          selectedPoster = "src/assets/DisplayPosters/CandyDisplay2.png";
+          selectedPoster =
+            "src/assets/PrimaryPosters/Display/CandyDisplay2.png";
           selectedHeadline = "A COZY DAY CALLS FOR\n A BEAUTIFUL PIECE OF:";
         } else {
-          selectedPoster = "src/assets/DisplayPosters/GlaucusDisplay2.png";
+          selectedPoster =
+            "src/assets/PrimaryPosters/Display/GlaucusDisplay2.png";
           selectedHeadline = "DOES THE ICE CREAM MELT?\n COOL IT DOWN WITH:";
         }
 

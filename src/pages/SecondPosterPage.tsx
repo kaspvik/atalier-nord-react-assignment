@@ -120,7 +120,7 @@ export default function PosterPage() {
 
   return (
     <MainContainer>
-      <Heading>THE SPECTRUM COLLECTION</Heading>
+      <Heading>THE BOTANICAL COLLECTION</Heading>
       <SubHeading>WHERE TWO COLORS MEET, A NEW BEAUTY EMERGES</SubHeading>
 
       {/* Stor bild högst upp */}
@@ -131,7 +131,7 @@ export default function PosterPage() {
 
       <PosterContainer>
         {/* Fyra poster-rader med text */}
-        {posters.slice(0, 4).map((poster, index) => (
+        {posters.slice(7, 11).map((poster, index) => (
           <PosterRow key={poster.id} reverse={index % 2 === 1}>
             <StyledImage src={poster.image} alt={poster.title} />
             <Description>{descriptions[index]}</Description>
@@ -141,7 +141,7 @@ export default function PosterPage() {
 
       {/* Avslutande två bilder bredvid varandra */}
       <FinalRow>
-        {posters.slice(4, 6).map((poster) => (
+        {posters.slice(12, 14).map((poster) => (
           <StyledImage key={poster.id} src={poster.image} alt={poster.title} />
         ))}
       </FinalRow>

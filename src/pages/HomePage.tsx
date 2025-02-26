@@ -36,11 +36,11 @@ const YourComponent = () => {
       <StyledHeading>THE COLLECTIONS:</StyledHeading>
       <PosterContainer>
         <PosterCard
-          image="src/assets/DisplayPosters/PrimaryDisplay2.png"
+          image="src/assets/PrimaryPosters/Display/PrimaryDisplay2.png"
           title="THE SPECTRUM COLLECTION"
         />
         <PosterCard
-          image="src/assets/DisplayPosters/PrimaryDisplay2.png"
+          image="src/assets/BotanicalPosters/Posters/BlueVine.png"
           title="THE BOTANICAL COLLECTION"
         />
       </PosterContainer>
