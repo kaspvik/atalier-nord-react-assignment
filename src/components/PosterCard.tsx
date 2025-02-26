@@ -37,11 +37,12 @@ const PosterTitle = styled.h3`
 interface PosterCardProps {
   image: string;
   title: string;
+  link: string; // Ny prop för länken
 }
 
-export default function PosterCard({ image, title }: PosterCardProps) {
+export default function PosterCard({ image, title, link }: PosterCardProps) {
   return (
-    <StyledLink to="/posters">
+    <StyledLink to={link}>
       <Card>
         <PosterImage src={image} alt={title} />
         <PosterTitle>{title}</PosterTitle>
