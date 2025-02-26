@@ -5,6 +5,7 @@ const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  background-color: #f4f4f4;
 `;
 
 const Heading = styled.h2`
@@ -112,20 +113,20 @@ const HighlightedLink = styled.a`
 
 export default function PosterPage() {
   const descriptions = [
-    "DISCOVER THE ELEGANCE OF CONTRAST AND UNITY IN SPECTRUM.",
-    "SPECTRUM IS A COLLECTION THAT CELEBRATES THE POWER OF COLOR IN CONTEMPORARY ART.",
-    "PERFECT FOR THOSE WHO APPRECIATE HOW COLOR TRANSFORMS A SPACE.",
-    '"SPECTRUM" BRINGS DYNAMIC ENERGY AND CREATIVITY INTO ANY ROOM.',
+    "IMMERSE YOURSELF IN THE SERENE BEAUTY OF NATURE WITH THE BOTANICAL COLLECTION.",
+    "EACH PIECE CAPTURES THE DELICATE BALANCE BETWEEN VIBRANT LIFE AND TRANQUIL ELEGANCE.",
+    "PERFECT FOR THOSE WHO FIND INSPIRATION IN THE ORGANIC FORMS OF THE NATURAL WORLD.",
+    '"THE BOTANICAL COLLECTION’ BRINGS A TOUCH OF EVERLASTING BLOOM TO ANY SPACE.',
   ];
 
   return (
     <MainContainer>
       <Heading>THE BOTANICAL COLLECTION</Heading>
-      <SubHeading>WHERE TWO COLORS MEET, A NEW BEAUTY EMERGES</SubHeading>
+      <SubHeading>WHERE NATURE MEETS ART</SubHeading>
 
       {/* Stor bild högst upp */}
       <LargeImage
-        src="src/assets/PrimaryPosters/Posters/SpectrumDisplay.png"
+        src="src/assets/BotanicalPosters/Display/SunFlowerDisplay.png"
         alt="Display image for Spectrum"
       />
 
@@ -146,7 +147,7 @@ export default function PosterPage() {
         ))}
       </FinalRow>
       <FinalHeading>
-        AVAILABLE NOW AT{" "}
+        SOON AVAILABLE AT{" "}
         <HighlightedLink
           href="https://ateliernordart.etsy.com"
           target="_blank"
