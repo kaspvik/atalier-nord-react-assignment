@@ -2,6 +2,12 @@ import styled from "styled-components";
 import WeatherPoster from "../api/WeatherPoster";
 import PosterCard from "../components/PosterCard";
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 const StyledHeading = styled.h2`
   font-size: 1.8rem;
   font-weight: bold;
@@ -12,16 +18,33 @@ const StyledHeading = styled.h2`
   font-family: "Aileron Black", sans-serif;
 `;
 
+const PosterContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 const YourComponent = () => {
   return (
-    <div>
+    <Wrapper>
       <WeatherPoster />
       <StyledHeading>THE COLLECTIONS:</StyledHeading>
-      <PosterCard
-        image="src/assets/DisplayPosters/PrimaryDisplay2.png"
-        title="THE SPECTRUM COLLECTION"
-      />
-    </div>
+      <PosterContainer>
+        <PosterCard
+          image="src/assets/DisplayPosters/PrimaryDisplay2.png"
+          title="THE SPECTRUM COLLECTION"
+        />
+        <PosterCard
+          image="src/assets/DisplayPosters/PrimaryDisplay2.png"
+          title="THE BOTANICAL COLLECTION"
+        />
+      </PosterContainer>
+    </Wrapper>
   );
 };
 
