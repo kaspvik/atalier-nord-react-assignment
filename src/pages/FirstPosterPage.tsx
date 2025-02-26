@@ -5,6 +5,7 @@ const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  background-color: #f4f4f4;
 `;
 
 const Heading = styled.h2`
