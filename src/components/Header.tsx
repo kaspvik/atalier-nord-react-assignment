@@ -75,8 +75,13 @@ export default function Header() {
             </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/posters" onClick={() => setIsOpen(false)}>
-              Posters
+            <Link to="/Spectrum" onClick={() => setIsOpen(false)}>
+              Spectrum Collection
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/Botanical" onClick={() => setIsOpen(false)}>
+              Botanical Collection
             </Link>
           </MenuItem>
         </MenuList>
