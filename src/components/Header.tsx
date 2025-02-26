@@ -41,7 +41,7 @@ const Menu = styled.nav<{ open: boolean }>`
   top: 100%;
   left: 0;
   background-color: white;
-  width: 300px;
+  width: 320px;
   display: ${({ open }) => (open ? "block" : "none")};
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -61,6 +61,7 @@ const MenuItem = styled.li`
     text-decoration: none;
     color: #0746fd;
     font-size: 1.5rem;
+    font-weight: 600;
 
     &:hover {
       color: rgb(123, 156, 255);
