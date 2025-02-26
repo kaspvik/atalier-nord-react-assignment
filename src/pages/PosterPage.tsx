@@ -3,6 +3,7 @@ import PosterCard from "../components/PosterCard";
 import { posters } from "../Data";
 
 const Heading = styled.h2`
+  display: flex;
   font-size: 32px;
   font-weight: bold;
   text-align: left;

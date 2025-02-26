@@ -7,6 +7,7 @@ const Card = styled.div`
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
+  margin: 0;
 
   &:hover {
     transform: scale(1.05);
@@ -18,6 +19,13 @@ const PosterImage = styled.img`
   height: auto;
   border-radius: 8px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 `;
 
 const PosterTitle = styled.h3`
@@ -33,11 +41,11 @@ interface PosterCardProps {
 
 export default function PosterCard({ image, title }: PosterCardProps) {
   return (
-    <Link to="/posters" style={{ textDecoration: "none", color: "inherit" }}>
+    <StyledLink to="/posters">
       <Card>
         <PosterImage src={image} alt={title} />
         <PosterTitle>{title}</PosterTitle>
       </Card>
-    </Link>
+    </StyledLink>
   );
 }
