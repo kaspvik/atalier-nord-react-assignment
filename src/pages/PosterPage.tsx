@@ -92,6 +92,24 @@ const FinalRow = styled.div`
   margin-top: 40px;
 `;
 
+const FinalHeading = styled.h2`
+  font-size: 30px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Aileron Black", sans-serif;
+  color: #333;
+`;
+
+const HighlightedLink = styled.a`
+  color: #f16521;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export default function PosterPage() {
   const descriptions = [
     "DISCOVER THE ELEGANCE OF CONTRAST AND UNITY IN SPECTRUM.",
@@ -127,6 +145,16 @@ export default function PosterPage() {
           <StyledImage key={poster.id} src={poster.image} alt={poster.title} />
         ))}
       </FinalRow>
+      <FinalHeading>
+        AVAILABLE NOW AT{" "}
+        <HighlightedLink
+          href="https://ateliernordart.etsy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ETSY.COM
+        </HighlightedLink>
+      </FinalHeading>
     </MainContainer>
   );
 }
