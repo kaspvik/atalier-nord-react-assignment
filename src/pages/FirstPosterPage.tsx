@@ -54,6 +54,7 @@ const LargeImage = styled.img`
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 60px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 `;
 
 const StyledImage = styled.img`
@@ -62,6 +63,13 @@ const StyledImage = styled.img`
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const Description = styled.p`

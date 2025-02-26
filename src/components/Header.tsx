@@ -14,6 +14,7 @@ const HeaderContainer = styled.header`
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  border-radius: 20px 20px 0px 0px;
 `;
 
 const Logo = styled.h1`
