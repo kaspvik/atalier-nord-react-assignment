@@ -4,14 +4,13 @@ import { posters } from "../Data";
 const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px; /* Ger luft på sidorna */
+  padding: 40px 20px;
 `;
 
 const Heading = styled.h2`
   font-size: 32px;
   font-weight: bold;
-  text-align: center; /* Centrerad rubrik */
-  color: #333;
+  text-align: center;
   margin-bottom: 10px;
   font-family: "Aileron Black", sans-serif;
 `;
