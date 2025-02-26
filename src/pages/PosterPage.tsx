@@ -28,7 +28,7 @@ const SubHeading = styled.h3`
 const PosterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 0px;
 `;
 
 const PosterRow = styled.div<{ reverse?: boolean }>`
@@ -58,7 +58,7 @@ const LargeImage = styled.img`
 
 const StyledImage = styled.img`
   width: 100%;
-  max-width: 500px; /* Sätter maxstorlek på bilder */
+  max-width: 500px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -67,14 +67,15 @@ const StyledImage = styled.img`
 const Description = styled.p`
   flex: 1;
   max-width: 50%;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 1.6;
   text-align: left;
+  font-weight: 700;
   font-family: "Aileron Black", sans-serif;
 
   @media (max-width: 1024px) {
     max-width: 60%;
-    font-size: 16px;
+    font-size: 25px;
   }
 
   @media (max-width: 768px) {
@@ -88,6 +89,7 @@ const FinalRow = styled.div`
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 40px;
 `;
 
 export default function PosterPage() {
