@@ -135,7 +135,7 @@ export default function PosterPage() {
       {/* Stor bild högst upp */}
       <LargeImage
         src="src/assets/BotanicalPosters/Display/SunFlowerDisplay.png"
-        alt="Display image for Spectrum"
+        alt="Display image for the Botanical collection"
       />
 
       <PosterContainer>

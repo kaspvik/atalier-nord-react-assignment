@@ -7,6 +7,10 @@ const AboutPageWrapper = styled.div`
   justify-content: center;
   padding: 20px;
   text-align: center;
+  background-color: #f4f4f4;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 const AboutImage = styled.img`
@@ -16,6 +20,11 @@ const AboutImage = styled.img`
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const AboutText = styled.p`
@@ -25,6 +34,7 @@ const AboutText = styled.p`
   line-height: 1.6;
   font-family: "Aileron Black", sans-serif;
   font-weight: 600;
+  white-space: pre-line;
 `;
 
 const AboutPage = () => {

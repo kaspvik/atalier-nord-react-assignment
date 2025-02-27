@@ -25,11 +25,16 @@ const StyledH2 = styled.h2`
 `;
 
 const StyledImage = styled.img`
-  width: 900px;
+  width: 700px;
   height: 700px; /* Anger höjden för att tvinga bilden att passa in */
   object-fit: cover; /* Detta beskär och skalar bilden för att fylla hela området */
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const WeatherPoster: React.FC = () => {
