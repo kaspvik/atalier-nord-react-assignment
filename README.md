@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Atelier Nord - React Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project is a React-based web application where we got free hands to develop our own idea. I choose to develop a showroom for my sidehobby, where i create digital posters.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Vite
 
-- Configure the top-level `parserOptions` property like this:
+- Styled components
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Routing
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Weather API
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Features
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Recommended digital poster based on temperature – Dynamically suggests a poster using OpenWeather API.
+- Poster showroom – Browse and explore a curated collection of posters.
+- Dynamic routing with React Router – Navigate seamlessly between different poster pages.
+- Styled Components for CSS-in-JS – Modular and scoped styling for a clean UI.
+
+## Installation & Setup
+
+1. Clone this repository: `git clone` (https://github.com/kaspvik/atalier-nord-react-assignment)
+   cd atalier-nord-react-assignment
+
+2. Type the following in the terminal `npm init vite@latest` and follow to install React with Typescript
+
+3. Install dependencies: `npm install`
+
+4. Start the development server: `npm run dev`
+
+This will start a local development server. Open http://localhost:5173/ in your browser to view the app.
+
+## Demo link
