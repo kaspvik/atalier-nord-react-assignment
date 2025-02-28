@@ -140,7 +140,7 @@ export default function PosterPage() {
 
       <PosterContainer>
         {/* Fyra poster-rader med text */}
-        {posters.slice(7, 11).map((poster, index) => (
+        {posters.slice(6, 10).map((poster, index) => (
           <PosterRow key={poster.id} reverse={index % 2 === 1}>
             <StyledImage src={poster.image} alt={poster.title} loading="lazy" />
             <Description>{descriptions[index]}</Description>
@@ -150,7 +150,7 @@ export default function PosterPage() {
 
       {/* Avslutande två bilder bredvid varandra */}
       <FinalRow>
-        {posters.slice(12, 14).map((poster) => (
+        {posters.slice(10, 12).map((poster) => (
           <StyledImage
             key={poster.id}
             src={poster.image}
