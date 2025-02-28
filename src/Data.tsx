@@ -31,41 +31,31 @@ export const posters = [
   },
   {
     id: 7,
-    title: "VIOLETT",
-    image: "src/assets/PrimaryPosters/Display/ViolettDisplay2.png",
-  },
-  {
-    id: 8,
     title: "BLUEVINE",
     image: "src/assets/BotanicalPosters/Posters/BlueVine.png",
   },
   {
-    id: 9,
+    id: 8,
     title: "SUNFLOWER",
     image: "src/assets/BotanicalPosters/Posters/SunFlower.png",
   },
   {
-    id: 10,
+    id: 9,
     title: "TERACOTTA",
     image: "src/assets/BotanicalPosters/Posters/Teracotta.png",
   },
   {
-    id: 11,
+    id: 10,
     title: "VIOL",
     image: "src/assets/BotanicalPosters/Posters/Viol.png",
   },
   {
-    id: 12,
-    title: "EUCALYPTUS",
-    image: "src/assets/BotanicalPosters/Posters/Eucalyptus.png",
-  },
-  {
-    id: 13,
+    id: 11,
     title: "KABLUEY",
     image: "src/assets/BotanicalPosters/Posters/Kabluey.png",
   },
   {
-    id: 14,
+    id: 12,
     title: "GREENHANDS",
     image: "src/assets/BotanicalPosters/Posters/GreenHands.png",
   },

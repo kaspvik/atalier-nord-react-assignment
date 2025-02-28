@@ -6,7 +6,7 @@ import App from "./App.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
 import FirstPosterPage from "./pages/FirstPosterPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
-import SecondPosterPage from "./pages/SecondPosterPage.tsx";
+import SecondPosterPage from "./pages/SecondPosterPage";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
