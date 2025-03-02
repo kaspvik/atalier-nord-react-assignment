@@ -23,6 +23,15 @@ const Logo = styled.h1`
   transform: translateX(-50%);
   margin: 0;
   font-size: 3rem;
+  white-space: nowrap;
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const MenuIcon = styled.span`

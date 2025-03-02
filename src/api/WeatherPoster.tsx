@@ -22,18 +22,36 @@ const StyledH2 = styled.h2`
   font-weight: 600;
   font-family: "Aileron", sans-serif;
   white-space: pre-line;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
 const StyledImage = styled.img`
   width: 700px;
-  height: 700px; /* Anger höjden för att tvinga bilden att passa in */
-  object-fit: cover; /* Detta beskär och skalar bilden för att fylla hela området */
+  height: 700px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   transition: 0.3s;
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    width: 500px;
+    height: 500px;
+  }
+
+  @media (max-width: 480px) {
+    width: 300px;
+    height: 300px;
   }
 `;
 
