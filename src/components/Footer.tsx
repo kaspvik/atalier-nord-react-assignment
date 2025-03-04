@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <FooterContainer>
       <Logo
-        src="src/assets/Logos/AtelierNordLogo.png"
+        src="public/assets/Logos/AtelierNordLogo.png"
         alt="Atelier Nord Logo"
       />
     </FooterContainer>

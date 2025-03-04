@@ -40,7 +40,7 @@ const AboutText = styled.p`
 const AboutPage = () => {
   return (
     <AboutPageWrapper>
-      <AboutImage src="src/assets/Logos/logo.png" alt="About us" />
+      <AboutImage src="public/assets/Logos/logo.png" alt="About us" />
       <AboutText>
         WELCOME TO ATELIER NORD! WE ARE PASSIONATE ABOUT CREATING UNIQUE,
         ARTISTIC PIECES THAT INSPIRE CREATIVITY AND BEAUTY. OUR COLLECTIONS

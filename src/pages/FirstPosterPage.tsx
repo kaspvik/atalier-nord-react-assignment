@@ -133,7 +133,7 @@ export default function PosterPage() {
 
       {/* Stor bild högst upp */}
       <LargeImage
-        src="src/assets/PrimaryPosters/Posters/SpectrumDisplay.png"
+        src="public/assets/PrimaryPosters/Posters/SpectrumDisplay.png"
         alt="Display image for Spectrum"
       />
 
