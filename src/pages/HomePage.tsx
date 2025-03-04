@@ -42,13 +42,13 @@ const YourComponent = () => {
       <StyledHeading>THE COLLECTIONS:</StyledHeading>
       <PosterContainer>
         <PosterCard
-          image="public/assets/PrimaryPosters/Display/PrimaryDisplay2.png"
+          image="/assets/PrimaryPosters/Display/PrimaryDisplay2.png"
           title="THE SPECTRUM COLLECTION"
           link="/Spectrum"
         />
 
         <PosterCard
-          image="public/assets/BotanicalPosters/Posters/BlueVine.png"
+          image="/assets/BotanicalPosters/Posters/BlueVine.png"
           title="THE BOTANICAL COLLECTION"
           link="/Botanical"
         />

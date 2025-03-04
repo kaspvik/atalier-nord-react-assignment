@@ -19,10 +19,7 @@ const Logo = styled.img`
 export default function Footer() {
   return (
     <FooterContainer>
-      <Logo
-        src="public/assets/Logos/AtelierNordLogo.png"
-        alt="Atelier Nord Logo"
-      />
+      <Logo src="/assets/Logos/AtelierNordLogo.png" alt="Atelier Nord Logo" />
     </FooterContainer>
   );
 }
